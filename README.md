@@ -16,7 +16,7 @@ url = "https://github.com/lam-hien/proj/blob/main/2013_plane_flight.csv.gz?raw=t
 plane_flight = pd.read_csv(url, compression='gzip')
 ```
 
-Data for objective 3 (2020 & 2021 data:
+Data for objective 3 (2020 & 2021):
 ```
 import pandas as pd
 
