@@ -33,8 +33,8 @@ atl_planes = pd.read_csv('https://raw.githubusercontent.com/lam-hien/proj/main/a
 atl_weather = pd.read_csv('https://raw.githubusercontent.com/lam-hien/proj/main/atl_weather.csv')
 
 # to filter only DAL and DFW destinations from atlanta_flights
-atlanta = atl_flights[(atl_flights['dest'] == 'DAL') | (atl_flights['dest'] == 'DFW')] 
+atl_flights.query("dest == 'DAL' or dest == 'DFW'", inplace=True)
 
 # to filter only IAH destinations from dallas_flights
-dallas = dallas_flights[(dallas_flights['dest'] == 'IAH')]
+dallas_flights.query("dest == 'IAH'", inplace=True)
 ```
