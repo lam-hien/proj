@@ -18,5 +18,16 @@ plane_flight = pd.read_csv(url, compression='gzip')
 
 Data for objective 3:
 ```
-(check back later)
+import pandas as pd
+dallas_flights = pd.read_csv('https://raw.githubusercontent.com/lam-hien/proj/main/dallas_flights.csv')
+dallas_airlines = pd.read_csv('https://raw.githubusercontent.com/lam-hien/proj/main/dallas_airlines.csv')
+dallas_airports = pd.read_csv('https://raw.githubusercontent.com/lam-hien/proj/main/dallas_airports.csv')
+dallas_planes = pd.read_csv('https://raw.githubusercontent.com/lam-hien/proj/main/dallas_planes.csv')
+dallas_weather = pd.read_csv('https://raw.githubusercontent.com/lam-hien/proj/main/dallas_weather.csv')
+
+atl_flights = pd.read_csv('https://raw.githubusercontent.com/lam-hien/proj/main/atl_flights.csv')
+atl_airlines = pd.read_csv('https://raw.githubusercontent.com/lam-hien/proj/main/atl_airlines.csv')
+atl_airports = pd.read_csv('https://raw.githubusercontent.com/lam-hien/proj/main/atl_airports.csv')
+atl_planes = pd.read_csv('https://raw.githubusercontent.com/lam-hien/proj/main/atl_planes.csv')
+atl_weather = pd.read_csv('https://raw.githubusercontent.com/lam-hien/proj/main/atl_weather.csv')
 ```
