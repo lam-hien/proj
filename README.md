@@ -35,5 +35,5 @@ atlanta_weather = pd.read_csv('https://raw.githubusercontent.com/lam-hien/proj/m
 atlanta.query("dest == 'DAL' or dest == 'DFW'", inplace=True)
 
 # to filter only IAH destinations from dallas_flights
-dallas.query("dest == 'IAH'", inplace=True)
+dallas.query("dest == 'ATL'", inplace=True)
 ```
