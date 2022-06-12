@@ -2,7 +2,9 @@
 
 Data for objective 1:
 ```
-(check back later)
+import pandas as pd
+url = "https://github.com/lam-hien/proj/blob/main/df.csv.gz?raw=tr"
+df = pd.read_csv(url, compression='gzip')
 ```
 
 Data for objective 2:
