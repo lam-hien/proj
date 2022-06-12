@@ -16,25 +16,19 @@ url = "https://github.com/lam-hien/proj/blob/main/2013_plane_flight.csv.gz?raw=t
 plane_flight = pd.read_csv(url, compression='gzip')
 ```
 
-Data for objective 3:
+Data for objective 3 (2020 & 2021 data:
 ```
 import pandas as pd
 
 airlines = pd.read_csv('https://raw.githubusercontent.com/lam-hien/proj/main/airlines.csv') # same for dallas and atlanta
 
-dallas_flights = pd.read_csv('https://raw.githubusercontent.com/lam-hien/proj/main/dallas_flights.csv')
-dallas_airports = pd.read_csv('https://raw.githubusercontent.com/lam-hien/proj/main/dallas_airports.csv')
-dallas_planes = pd.read_csv('https://raw.githubusercontent.com/lam-hien/proj/main/dallas_planes.csv')
-dallas_weather = pd.read_csv('https://raw.githubusercontent.com/lam-hien/proj/main/dallas_weather.csv')
+dallas = pd.read_csv('https://github.com/lam-hien/proj/blob/main/dallas_flights.csv.gz?raw=tr', compression='gzip')
 
-atl_flights = pd.read_csv('https://raw.githubusercontent.com/lam-hien/proj/main/atl_flights.csv')
-atl_airports = pd.read_csv('https://raw.githubusercontent.com/lam-hien/proj/main/atl_airports.csv')
-atl_planes = pd.read_csv('https://raw.githubusercontent.com/lam-hien/proj/main/atl_planes.csv')
-atl_weather = pd.read_csv('https://raw.githubusercontent.com/lam-hien/proj/main/atl_weather.csv')
+atlanta = pd.read_csv('https://raw.githubusercontent.com/lam-hien/proj/main/atlanta_flights.csv')
 
 # to filter only DAL and DFW destinations from atlanta_flights
-atl_flights.query("dest == 'DAL' or dest == 'DFW'", inplace=True)
+atlanta.query("dest == 'DAL' or dest == 'DFW'", inplace=True)
 
 # to filter only IAH destinations from dallas_flights
-dallas_flights.query("dest == 'IAH'", inplace=True)
+dallas.query("dest == 'IAH'", inplace=True)
 ```
