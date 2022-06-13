@@ -22,18 +22,10 @@ import pandas as pd
 
 airlines = pd.read_csv('https://raw.githubusercontent.com/lam-hien/proj/main/airlines.csv') # same for dallas and atlanta
 
-# flights data
-dallas = pd.read_csv('https://github.com/lam-hien/proj/blob/main/dallas_flights.csv.gz?raw=tr', compression='gzip')
-atlanta = pd.read_csv('https://raw.githubusercontent.com/lam-hien/proj/main/atlanta_flights.csv')
+# flights data (dal to atl, dfw to atl, atl to dal, atl to dfw)
+city = pd.read_csv('https://raw.githubusercontent.com/lam-hien/proj/main/city.csv')
 
 # weather data
 dallas_weather = pd.read_csv('https://raw.githubusercontent.com/lam-hien/proj/main/dallas_weather.csv')
 atlanta_weather = pd.read_csv('https://raw.githubusercontent.com/lam-hien/proj/main/atlanta_weather.csv')
-
-
-# to filter only DAL and DFW destinations from atlanta_flights
-atlanta.query("dest == 'DAL' or dest == 'DFW'", inplace=True)
-
-# to filter only IAH destinations from dallas_flights
-dallas.query("dest == 'ATL'", inplace=True)
 ```
